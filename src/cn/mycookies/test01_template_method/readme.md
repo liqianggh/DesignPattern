@@ -12,4 +12,4 @@
 
   
 
-  ![01_templateMethod](images\01_templateMethod.jpg)
+  ![01_templateMethod](../../../../images/01_templateMethod.jpg)
