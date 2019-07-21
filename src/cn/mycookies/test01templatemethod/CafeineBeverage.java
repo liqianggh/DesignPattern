@@ -1,4 +1,4 @@
-package cn.mycookies.test01_template_method;
+package cn.mycookies.test01templatemethod;
 
 /**
  * 咖啡因饮料
