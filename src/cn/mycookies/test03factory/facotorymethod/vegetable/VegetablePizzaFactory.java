@@ -1,7 +1,7 @@
-package cn.mycookies.test03factory.abstractfacotory.vegetable;
+package cn.mycookies.test03factory.facotorymethod.vegetable;
 
-import cn.mycookies.test03factory.abstractfacotory.Pizza;
-import cn.mycookies.test03factory.abstractfacotory.PizzaFactory;
+import cn.mycookies.test03factory.facotorymethod.Pizza;
+import cn.mycookies.test03factory.facotorymethod.PizzaFactory;
 
 /**
  * 蔬菜pizza工厂类
