@@ -1,4 +1,4 @@
-package cn.mycookies.test03factory.abstractfacotory;
+package cn.mycookies.test03factory.factorymethod;
 
 /**
  * 工厂模式-抽象工厂测试

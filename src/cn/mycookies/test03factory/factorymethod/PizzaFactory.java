@@ -1,4 +1,4 @@
-package cn.mycookies.test03factory.abstractfacotory;
+package cn.mycookies.test03factory.factorymethod;
 
 /**
  * Pizza工厂的接口类
