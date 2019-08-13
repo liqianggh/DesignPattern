@@ -1,6 +1,6 @@
-package cn.mycookies.test03factory.factorymethod.vegetable;
+package cn.mycookies.test03factory.facotorymethod.vegetable;
 
-import cn.mycookies.test03factory.factorymethod.Pizza;
+import cn.mycookies.test03factory.facotorymethod.Pizza;
 /**
  * 蔬菜披萨
  * @author Jann Lee

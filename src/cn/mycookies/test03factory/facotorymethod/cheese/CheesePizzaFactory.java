@@ -1,7 +1,7 @@
-package cn.mycookies.test03factory.factorymethod.cheese;
+package cn.mycookies.test03factory.facotorymethod.cheese;
 
-import cn.mycookies.test03factory.factorymethod.Pizza;
-import cn.mycookies.test03factory.factorymethod.PizzaFactory;
+import cn.mycookies.test03factory.facotorymethod.Pizza;
+import cn.mycookies.test03factory.facotorymethod.PizzaFactory;
 
 /**
  * 芝士pizza的工厂类， 用来创建芝士pizza

@@ -1,6 +1,6 @@
-package cn.mycookies.test03factory.factorymethod.cheese;
+package cn.mycookies.test03factory.facotorymethod.cheese;
 
-import cn.mycookies.test03factory.factorymethod.Pizza;
+import cn.mycookies.test03factory.facotorymethod.Pizza;
 
 /**
  * 芝士披萨类
