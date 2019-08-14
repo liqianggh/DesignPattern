@@ -6,16 +6,9 @@ package cn.mycookies.test08proxy;
  **/
 public class OrderServiceImpl implements IOrderService {
 
-    private IOrderDao iOrderDao;
-
-    public OrderServiceImpl() {
-        // 模拟spring注入
-        iOrderDao = new OrderDaoImpl();
-    }
 
     @Override
-    public int saveOrder(Order order) {
-        System.out.println("Service层调用dao层添加Order"+order.getOrderInfo());
-        return iOrderDao.insert(order);
+    public void saveOrder(Order order) {
+        System.out.println("Service层调用"+order.getOrderInfo());
     }
 }

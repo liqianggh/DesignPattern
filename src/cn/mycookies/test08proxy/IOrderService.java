@@ -5,5 +5,5 @@ package cn.mycookies.test08proxy;
  * @date 2019-08-14 0:48
  **/
 public interface IOrderService {
-    int saveOrder(Order order);
+    void saveOrder(Order order);
 }
