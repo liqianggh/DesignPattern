@@ -10,7 +10,7 @@
 
 类图：
 
-![](../../../../../images/03_factory_method.png)
+![](../../../../../images/03_factory_method.jpg)
 
 说明：
 
