@@ -4,7 +4,7 @@
 ## 类
   ![01_templateMethod](../../../../images/class_adaptor.jpg)
 
-  ![01_templateMethod](../../../../images/object_adaptor.jpg)
+  ![01_templateMethod](../../../../images/object_adapter.jpg)
 
  
 ## 优点
