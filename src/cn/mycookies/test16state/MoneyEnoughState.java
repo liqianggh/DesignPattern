@@ -8,6 +8,12 @@ package cn.mycookies.test16state;
  **/
 public class MoneyEnoughState implements State{
 
+    VendingMachine vendingMachine;
+
+    public MoneyEnoughState(VendingMachine vendingMachine) {
+        this.vendingMachine = vendingMachine;
+    }
+
     @Override
     public void insertCoins() {
         System.out.println("当前余额充足，无需投币");
@@ -16,13 +22,13 @@ public class MoneyEnoughState implements State{
     @Override
     public void ejectCoins() {
         System.out.println( "个硬币已退还，请收好");
-
+        vendingMachine.setState(vendingMachine.moneyLess);
     }
 
     @Override
     public void selectProduct() {
         System.out.println("已选择商品");
-        dispence();
+        vendingMachine.setState(vendingMachine.sold);
     }
 
     @Override
