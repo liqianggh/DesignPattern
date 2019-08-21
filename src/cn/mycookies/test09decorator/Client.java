@@ -3,10 +3,9 @@ package cn.mycookies.test09decorator;
 import cn.mycookies.test09decorator.v1.PancakeWithEgg;
 import cn.mycookies.test09decorator.v1.PancakeWithEggSausage;
 import cn.mycookies.test09decorator.v2.AbstractPancake;
-import cn.mycookies.test09decorator.v2.Pancake;
 import cn.mycookies.test09decorator.v2.EggDecorator;
+import cn.mycookies.test09decorator.v2.Pancake;
 import cn.mycookies.test09decorator.v2.SansageDecorator;
-import org.junit.Test;
 
 /**
  * @author Jann Lee
@@ -14,8 +13,11 @@ import org.junit.Test;
  **/
 public class Client {
 
-    @Test
-    public void testFakeDecorator() {
+    public static void main(String[] args) {
+        testFakeDecorator();
+    }
+
+    public static void testFakeDecorator() {
         // 加1个鸡蛋
         Pancake pancakeWithEgg  = new PancakeWithEgg();
         // 加一个鸡蛋再加一根香肠
@@ -25,8 +27,7 @@ public class Client {
 
     }
 
-    @Test
-    public void testRealDecorator() {
+    public static void testRealDecorator() {
         AbstractPancake pancake = new Pancake();
         // 加2个鸡蛋
         pancake = new EggDecorator(pancake);

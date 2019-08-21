@@ -3,8 +3,6 @@ package cn.mycookies.test08proxy;
 import cn.mycookies.test08proxy.dynamicproxy.OrderServiceDynamicProxy;
 import cn.mycookies.test08proxy.staticproxy.OrderServiceStaticProxy;
 import cn.mycookies.test08proxy.utils.ProxyUtils;
-import org.junit.Test;
-
 /**
  * 动态代理和静态代理测试
  *
@@ -19,14 +17,15 @@ public class Client {
         order.setUserId(123);
     }
 
-    @Test
-    public void staticProxyTest(){
+    public static void main(String[] args) {
+        staticProxyTest();
+    }
+
+    public static void staticProxyTest(){
         OrderServiceStaticProxy proxy = new OrderServiceStaticProxy();
         proxy.saveOrder(order);
     }
-
-    @Test
-    public void dynamicProxyTest(){
+    public static void dynamicProxyTest(){
         IOrderService proxy = (IOrderService) new OrderServiceDynamicProxy(new OrderServiceImpl()).bind();
         // *****************************生成一个$Proxy0.class文件，这个文件即为动态生成的代理类文件**********************************
         String saveFileName = "$Proxy0.class";
