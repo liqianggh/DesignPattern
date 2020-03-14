@@ -29,7 +29,7 @@ public class Client {
         IOrderService proxy = (IOrderService) new OrderServiceDynamicProxy(new OrderServiceImpl()).bind();
         // *****************************生成一个$Proxy0.class文件，这个文件即为动态生成的代理类文件**********************************
         String saveFileName = "$Proxy0.class";
-        ProxyUtils.saveProxyClass(saveFileName, proxy.getClass().getSimpleName(),new Class[]{IOrderService.class});
+        ProxyUtils.saveProxyClass(saveFileName, proxy.getClass().getSimpleName(), new Class[]{IOrderService.class});
         // *****************************此区间代码可以忽略，仅为了观察java动态代理生成的类**********************************
         proxy.saveOrder(order);
     }
